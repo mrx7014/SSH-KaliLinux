@@ -26,3 +26,4 @@ ssh root@segfault.net
 ```sh
 segfault
 ```
+<img src="/img/server.png"></a>
