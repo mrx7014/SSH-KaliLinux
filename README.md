@@ -27,3 +27,14 @@ ssh root@segfault.net
 segfault
 ```
 <img src="img/server.png"></a>
+______________________________
+Now you connected to server successfully,then
+
+# You should copy this ssh line from ssh -O to segfault.net
+- Like This `ssh -o "SetEnv SECRET=PlPtAROaKlMNmnlsMwSbyb" \root@teso.segfault.net`
+- <img src="img/ssh.png"></a>
+___________________________________________________________________________________
+- You must keep this ssh with you, in order to connect to the server using it again. Do not connect using the ssh root@segfault.net command. You must connect using the ssh that you copied in order to save the work that you have done on the server.
+___________________________________________________________________________________
+## Contact US
+-Linktree: https://linktr.ee/mrx7014
