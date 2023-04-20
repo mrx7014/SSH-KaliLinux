@@ -37,4 +37,4 @@ ________________________________________________________________________________
 - You must keep this ssh with you, in order to connect to the server using it again. Do not connect using the ssh root@segfault.net command. You must connect using the ssh that you copied in order to save the work that you have done on the server.
 ___________________________________________________________________________________
 ## Contact US
--Linktree: https://linktr.ee/mrx7014
+- Linktree: https://linktr.ee/mrx7014
