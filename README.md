@@ -1,6 +1,5 @@
 # SSH-KaliLinux
-A free SSH KaliLinux server without limited time.
-This is a free kali linux server for all.
+A free SSH KaliLinux server without limited time,You can use this for test any tool or using kali linux tools or other something like building custom roms.
 _________________________________________________
 # Server specifications
 - RAM : `128GB`
