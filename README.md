@@ -27,7 +27,7 @@ segfault
 ```
 <img src="img/server.png"></a>
 ______________________________
-- Now you connected to server successfully,then
+- Now you connected to server successfully.
 - Type this command `bash` after login to use it instade of zsh
 ```sh
 bash
