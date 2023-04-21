@@ -27,8 +27,12 @@ segfault
 ```
 <img src="img/server.png"></a>
 ______________________________
-Now you connected to server successfully,then
-
+- Now you connected to server successfully,then
+- Type this command `bash` after login to use it instade of zsh
+```sh
+bash
+```
+______________________________
 # You should copy this ssh line from ssh -O to segfault.net
 - Like This `ssh -o "SetEnv SECRET=PlPtAROaKlMNmnlsMwSbyb" \root@teso.segfault.net`
 - <img src="img/ssh.jpg"></a>
