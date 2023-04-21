@@ -1,13 +1,13 @@
 # SSH KaliLinux
 A free SSH KaliLinux server without limited time,You can use this for test any tool or using kali linux tools or other something like building custom roms.
 
-# You should use vpn while using Hacking Tools like `reconftw` to avoid ban.
+# You should use vpn while using Hacking Tools like `reconftw,...etc` to avoid ban.
 _________________________________________________
 # Server specifications
 - RAM : `128GB`
 - CPU : `AMD Ryzen 7 3700X (16)`
 - GPU : `NVIDIA GeForce GT 710`
-- Space : `16GB`
+- Hard Size : `16GB` -->> If you want to increase this, text skyper in telegram and ask him to increase your server space, you can find the telegram group link at the bottom of the repo.
 _________________________________________________
 # First:You should install `openssh`
 
