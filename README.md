@@ -46,7 +46,10 @@ startxvnc
 ```
 - Then it will give you an SSH command again like this
 <img src="img/sshvnc.jpg"></a>
-- Take this ssh and open it at a new terminal and type passwd `segfault`
+- Take this ssh and open it at a new terminal and type passwd
+```sh
+segfault
+```
 - Then open any vnc viewer i'm using Remmina who is coming with ubuntu,And put this ip
 ```sh
 127.0.0.1:5900
