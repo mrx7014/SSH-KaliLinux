@@ -39,5 +39,12 @@ ______________________________
 ___________________________________________________________________________________
 - You must keep this ssh with you, in order to connect to the server using it again. Do not connect using the ssh root@segfault.net command. You must connect using the ssh that you copied in order to save the work that you have done on the server.
 ___________________________________________________________________________________
+# Now if you want to connect to server with vnc server follow steps:
+- Type this command in terminal
+```sh 
+startxvnc
+```
+- Then it will give you an SSH command again like this
+___________________________________________________________________________________
 ## Contact US
 - Linktree: https://linktr.ee/mrx7014
