@@ -45,7 +45,8 @@ ________________________________________________________________________________
 startxvnc
 ```
 - Then it will give you an SSH command again like this
-<img src="sshvnc.jpg">
+<img src="sshvnc.jpg"></a>
+- Take this ssh and open it at a new terminal and type passwd `segfault`
 ___________________________________________________________________________________
 ## Contact US
 - Linktree: https://linktr.ee/mrx7014
