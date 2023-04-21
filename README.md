@@ -5,7 +5,7 @@ _________________________________________________
 - RAM : `128GB`
 - CPU : `AMD Ryzen 7 3700X (16)`
 - GPU : `NVIDIA GeForce GT 710`
-- Space : `1TB`
+- Space : `16GB`
 _________________________________________________
 # First:You should install `openssh`
 
