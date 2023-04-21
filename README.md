@@ -49,7 +49,7 @@ startxvnc
 - Take this ssh and open it at a new terminal and type passwd `segfault`
 - Then open any vnc viewer i'm using Remmina who is coming with ubuntu,And put this ip `127.0.0.1:5900`
 <img src="img/sshdisplay.png"></a>
--Now you are successfully connected to the server with VNC server,Enjoy it.
+- Now you are successfully connected to the server with VNC server,Enjoy it.
 ___________________________________________________________________________________
 ## Contact US
 - Linktree: https://linktr.ee/mrx7014
