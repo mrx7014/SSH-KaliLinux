@@ -45,6 +45,7 @@ ________________________________________________________________________________
 startxvnc
 ```
 - Then it will give you an SSH command again like this
+<img src="sshvnc.jpg">
 ___________________________________________________________________________________
 ## Contact US
 - Linktree: https://linktr.ee/mrx7014
