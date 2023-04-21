@@ -51,7 +51,7 @@ startxvnc
 <img src="img/sshdisplay.png"></a>
 - Now you are successfully connected to the server with VNC server,Enjoy it.
 ___________________________________________________________________________________
-## Contact US
+# Contact US
 - Linktree: https://linktr.ee/mrx7014
 ___________________________________________________________________________________
 # Thanks to 
