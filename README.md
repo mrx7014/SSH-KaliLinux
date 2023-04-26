@@ -9,7 +9,7 @@ _________________________________________________
 - GPU : `NVIDIA GeForce GT 710`
 - Hard Size : `16GB` -->> If you want to increase this, text skyper in telegram and ask him to increase your server space, you can find the telegram group link at the bottom of the repo.
 _________________________________________________
-# First:You should install `openssh`
+# First:Install Packages
 
 - i made a script for `Linux` and `termux` to install packages and connect to server with very easy way.
 
