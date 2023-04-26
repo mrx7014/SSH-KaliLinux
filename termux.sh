@@ -1,11 +1,16 @@
 #!/bin/bash
 
-echo " __  __ _____  __   ________ ___  __ _  _  "
-echo "|  \/  |  __ \ \ \ / /____  / _ \/_ | || | "
-echo "| \  / | |__) | \ V /    / / | | || | || | "
-echo "| |\/| |  _  /   > <    / /| | | || |__   _|"
-echo "| |  | | | \ \  / . \  / / | |_| || |  | |  "
-echo "|_|  |_|_|  \_\/_/ \_\/_/   \___/ |_|  |_|"
+base64 -d <<<"IF9fX19fIF9fX19fX19fX19fX19fICBfX19fICAgX19fICAgX18KfF8gICBffCAgX19ffCBfX18g
+XCAgXC8gIHwgfCB8IFwgXCAvIC8KICB8IHwgfCB8X18gfCB8Xy8gLyAuICAuIHwgfCB8IHxcIFYg
+LyAKICB8IHwgfCAgX198fCAgICAvfCB8XC98IHwgfCB8IHwvICAgXCAKICB8IHwgfCB8X19ffCB8
+XCBcfCB8ICB8IHwgfF98IC8gL15cIFwKICBcXy8gXF9fX18vXF98IFxfXF98ICB8Xy9cX19fL1wv
+ICAgXC8KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAKIF9fX19fIF9fX19fIF9fX19fIF8gICBfX19fX19f
+ICAgICAgICAKLyAgX19ffCAgX19ffF8gICBffCB8IHwgfCBfX18gXCAgICAgICAKXCBgLS0ufCB8
+X18gICB8IHwgfCB8IHwgfCB8Xy8gLyAgICAgICAKIGAtLS4gXCAgX198ICB8IHwgfCB8IHwgfCAg
+X18vICAgICAgICAKL1xfXy8gLyB8X19fICB8IHwgfCB8X3wgfCB8ICAgICAgICAgICAKXF9fX18v
+XF9fX18vICBcXy8gIFxfX18vXF98ICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA="
 
 sleep 2
 
@@ -19,6 +24,10 @@ sleep 2
 
 echo "Join our channel t.me/goosetech7014"
 
+sleep 2
+
+echo "THX skyper for this free server"
+
 sleep 1
 
-pkg update && pkg upgrade && pkg install openssh && ssh root@segfaul.net
+pkg update && pkg upgrade && pkg install openssh && ssh root@segfault.net

@@ -1,11 +1,16 @@
 #!/bin/bash
 
-echo " __  __ _____  __   ________ ___  __ _  _  "
-echo "|  \/  |  __ \ \ \ / /____  / _ \/_ | || | "
-echo "| \  / | |__) | \ V /    / / | | || | || | "
-echo "| |\/| |  _  /   > <    / /| | | || |__   _|"
-echo "| |  | | | \ \  / . \  / / | |_| || |  | |  "
-echo "|_|  |_|_|  \_\/_/ \_\/_/   \___/ |_|  |_|"
+base64 -d <<<"IF8gICAgIF9fX19fIF8gICBfIF8gICBfX18gICBfXwp8IHwgICB8XyAgIF98IFwgfCB8IHwgfCBc
+IFwgLyAvCnwgfCAgICAgfCB8IHwgIFx8IHwgfCB8IHxcIFYgLyAKfCB8ICAgICB8IHwgfCAuIGAg
+fCB8IHwgfC8gICBcIAp8IHxfX19fX3wgfF98IHxcICB8IHxffCAvIC9eXCBcClxfX19fXy9cX19f
+L1xffCBcXy9cX19fL1wvICAgXC8KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgCiBfX19fXyBfX19fXyBfX19fXyBfICAgX19fX19f
+XyAKLyAgX19ffCAgX19ffF8gICBffCB8IHwgfCBfX18gXApcIGAtLS58IHxfXyAgIHwgfCB8IHwg
+fCB8IHxfLyAvCiBgLS0uIFwgIF9ffCAgfCB8IHwgfCB8IHwgIF9fLyAKL1xfXy8gLyB8X19fICB8
+IHwgfCB8X3wgfCB8ICAgIApcX19fXy9cX19fXy8gIFxfLyAgXF9fXy9cX3wgICAgCiAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA=="
+
+
 
 sleep 2
 
@@ -19,6 +24,8 @@ sleep 2
 
 echo "Join our channel t.me/goosetech7014"
 
-sleep 1
+sleep 2
+
+echo "THX skypr for this free server"
 
 sudo apt update && sudo apt upgrade && sudo apt install openssh && ssh root@segfault.net
