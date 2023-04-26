@@ -11,7 +11,20 @@ _________________________________________________
 _________________________________________________
 # First:You should install `openssh`
 
--So,i made a script for `Linux` and `termux` to install packages and connect to server with very easy way
+-i made a script for `Linux` and `termux` to install packages and connect to server with very easy way.
+
+-Termux
+```sh
+curl https://raw.githubusercontent.com/mrx7014/SSH-KaliLinux/main/termux.sh >> termux.sh
+bash termux.sh
+```
+
+-Linux
+
+```sh
+curl https://raw.githubusercontent.com/mrx7014/SSH-KaliLinux/main/termux.sh >> termux.sh
+bash termux.sh
+```
 
 - Password for connect
 ```sh
