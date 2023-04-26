@@ -11,18 +11,8 @@ _________________________________________________
 _________________________________________________
 # First:You should install `openssh`
 
-- For Termux
-```sh
-pkg update && pkg install openssh
-```
-- For Linux
-```sh
-sudo apt update && sudo apt install openssh
-```
-- Then connect server with this command
-```sh
-ssh root@segfault.net
-```
+-So,i made a script for `Linux` and `termux` to install packages and connect to server with very easy way
+
 - Password for connect
 ```sh
 segfault
