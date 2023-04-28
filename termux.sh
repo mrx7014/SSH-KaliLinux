@@ -1,5 +1,9 @@
 #!/bin/bash
 
+
+# Coded By MRX7014 ♡
+
+
 base64 -d <<<"IF9fX19fIF9fX19fX19fX19fX19fICBfX19fICAgX19fICAgX18KfF8gICBffCAgX19ffCBfX18g
 XCAgXC8gIHwgfCB8IFwgXCAvIC8KICB8IHwgfCB8X18gfCB8Xy8gLyAuICAuIHwgfCB8IHxcIFYg
 LyAKICB8IHwgfCAgX198fCAgICAvfCB8XC98IHwgfCB8IHwvICAgXCAKICB8IHwgfCB8X19ffCB8
@@ -13,21 +17,81 @@ XF9fX18vICBcXy8gIFxfX18vXF98ICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAg
 ICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA="
 
 sleep 2
+echo -e "\033[1;36m
+		  
+1] Setup and FiX Errors
 
-echo "Welcome At Termux Setup"
+2] Run as GUI
 
-sleep 2
+3] Contact Me on FB
 
-echo "Script By mrx7014"
+====== MRX7014 =====
+              
+"
+echo -e "\033[33m"
+                
+read -p "Choose : " mrx
 
-sleep 2
+                 
+if [ $mrx == 1 ]
+              
+then
+    echo ""
 
-echo "Join our channel t.me/goosetech7014"
+    echo -e "\033[1;31 WWelcome At Termux Setup\n"
 
-sleep 2
+    sleep 2
 
-echo "THX skyper for this free server"
 
-sleep 1
+    echo -e "\033[34mThis Script Made By mrx7014\n"
 
-pkg update && pkg upgrade && pkg install openssh && ssh root@segfault.net
+
+    sleep 2
+
+
+    echo -e "\033[1;33mNow, I I recommend you that Join now on Telegram Channel\n"
+
+
+    echo -e " \033[31m                  [*] Wait ...                  "
+
+
+    echo ""
+
+    sleep 5
+
+
+    xdg-open https://t.me/goosetech7014
+
+    sleep 2
+
+
+    echo ""
+
+
+    sleep 1
+
+
+
+    echo -e "\033[1;31m Now Enter 'segfault'\n "
+
+
+    pkg update && pkg upgrade && pkg install openssh && ssh root@segfault.net
+
+
+
+elif [ $mrx == 2 ]
+ 		
+then
+    echo ""
+    echo -e  "\033[1;31m after setup type 'startxvnc'"
+
+elif [ $mrx == 3]
+
+then
+
+    echo""
+
+    xdg-open https://www.facebook.com/kemo.beah.73
+
+	      
+fi
