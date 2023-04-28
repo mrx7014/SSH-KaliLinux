@@ -72,7 +72,7 @@ then
     echo -e "\033[1;31m Now Enter 'segfault'\n "
 
 
-    sudo apt update && sudo apt install openssh && ssh root@segfault.net
+    sudo apt update && sudo apt install openssh-client && ssh root@segfault.net
 
 
 
