@@ -82,7 +82,7 @@ then
     echo ""
     echo -e  "\033[1;31m after setup type 'startxvnc'"
 
-elif [ $mrx == 3]
+elif [ $mrx == 3 ]
 
 then
 
