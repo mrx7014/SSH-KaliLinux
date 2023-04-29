@@ -11,7 +11,7 @@ _________________________________________________
 _________________________________________________
 # First: Install Packages
 _________________________________________________
--You should use this scripts to install packages to connect to server if you using termux or linux,and if you use windows use putty to connect to server with connect command.
+- You should use this scripts to install packages to connect to server if you using termux or linux,and if you use windows use putty to connect to server with connect command.
 ______________________
 
 - i made a script for `Linux` and `termux` to install packages and connect to server with very easy way.
