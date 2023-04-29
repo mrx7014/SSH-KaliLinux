@@ -10,6 +10,9 @@ _________________________________________________
 - Hard Size : `16GB` -->> If you want to increase this, text skyper in telegram and ask him to increase your server space, you can find the telegram group link at the bottom of the repo.
 _________________________________________________
 # First: Install Packages
+_________________________________________________
+-You should use this scripts to install packages to connect to server if you using termux or linux,and if you use windows use putty to connect to server with connect command.
+______________________
 
 - i made a script for `Linux` and `termux` to install packages and connect to server with very easy way.
 
