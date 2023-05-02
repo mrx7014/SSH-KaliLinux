@@ -47,6 +47,10 @@ You can use Termuis app to connect to server and use vnc viewer too connect to g
 
 And you don't need to install any packages,just connect to server from termius app with this command `ssh root@segfault.net`.
 
+Download Termius from <a href="https://apps.apple.com/us/app/termius-terminal-ssh-client/id549039908">Here</a>
+
+Download VNC Viewer from <a href="https://apps.apple.com/us/app/vnc-viewer-remote-desktop/id352019548">Here</a>
+
 _______________________
 
 - Password for connect
