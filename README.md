@@ -7,7 +7,7 @@ _________________________________________________
 - RAM : `128GB`
 - CPU : `AMD Ryzen 7 3700X (16)`
 - GPU : `NVIDIA GeForce GT 710`
-- Hard Size : `16GB` -->> If you want to increase this, text skyper in telegram and ask him to increase your server space, you can find the telegram group link at the bottom of the repo.
+- Hard Size : `16GB` ==> If you want to increase this, text skyper in telegram and ask him to increase your server space, you can find the telegram group link at the bottom of the repo.
 _________________________________________________
 # First: Install Packages
 _________________________________________________
