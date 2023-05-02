@@ -11,12 +11,12 @@ _________________________________________________
 _________________________________________________
 # First: Install Packages
 _________________________________________________
-- You should use this scripts to install packages to connect to server if you using termux or linux,and if you use windows use putty to connect to server with connect command.
+- You should use this scripts to install packages to connect to server if you using termux or linux.
 ______________________
 
 - i made a script for `Linux` and `termux` to install packages and connect to server with very easy way.
 
-- Termux
+- Termux <a href="https://github.com/termux/termux-app/releases">Download it from here</a> For Android.
 ```sh
 curl https://raw.githubusercontent.com/mrx7014/SSH-KaliLinux/main/termux.sh >> termux.sh
 bash termux.sh
@@ -28,6 +28,19 @@ bash termux.sh
 curl https://raw.githubusercontent.com/mrx7014/SSH-KaliLinux/main/linux.sh >> linux.sh
 bash linux.sh
 ```
+
+- Windows
+
+1: Download <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">Putty</a> and choose pkg `32-bit x86`.
+2: Open it and type `ssh root@segfault.net` in Hostname Or Ip address bar.
+3: Now,server will ask you password to connect type `segfault` then press enter.
+4: Now server connected successfully. 
+
+- ios
+
+You can use Termuis app to connect to server and use vnc viewer too connect to gui `Both are available on the App store`,and you don't need to install any packages,just connect to server from termius app with this command `ssh root@segfault.net`
+
+_______________________
 
 - Password for connect
 ```sh
@@ -54,7 +67,18 @@ startxvnc
 ```sh
 segfault
 ```
-- Then open any vnc viewer i'm using Remmina who is coming with ubuntu,And put this ip
+- Then open any vnc viewer i'm using Remmina who is coming with Linux.
+
+- You can download VNC Viewer for android from <a href="https://play.google.com/store/apps/details?id=com.realvnc.viewer.android&hl=en_US&pli=1">Here</a>
+
+- For Windows From <a href="https://www.realvnc.com/en/connect/download/viewer/windows/">Here</a>
+
+- For Linux Remmina installed already.
+
+_________________________________________
+
+- Then Type this ip in VNC Viewer
+
 ```sh
 127.0.0.1:5900
 ```
