@@ -43,7 +43,9 @@ ____________________________________
 
 - ios
 
-You can use Termuis app to connect to server and use vnc viewer too connect to gui `Both are available on the App store`,and you don't need to install any packages,just connect to server from termius app with this command `ssh root@segfault.net`
+You can use Termuis app to connect to server and use vnc viewer too connect to gui `Both are available on the App store`
+
+And you don't need to install any packages,just connect to server from termius app with this command `ssh root@segfault.net`.
 
 _______________________
 
