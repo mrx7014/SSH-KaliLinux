@@ -32,9 +32,14 @@ bash linux.sh
 - Windows
 
 1: Download <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">Putty</a> and choose pkg `32-bit x86`.
+
 2: Open it and type `ssh root@segfault.net` in Hostname Or Ip address bar.
+
 3: Now,server will ask you password to connect type `segfault` then press enter.
+
 4: Now server connected successfully. 
+
+____________________________________
 
 - ios
 
