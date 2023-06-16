@@ -98,7 +98,6 @@ _________________________________________
 ___________________________________________________________________________________
 # Contact US
 - Linktree: https://linktr.ee/mrx7014
-- Join our telegram channel: https://t.me/goosetech7014
 ___________________________________________________________________________________
 # Thanks to 
 - [THC](https://www.thc.org) for this free server
