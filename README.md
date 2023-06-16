@@ -1,13 +1,13 @@
 # SSH KaliLinux
-A free SSH KaliLinux server without limited time,You can use this for test any tool or using kali linux tools or other something like building custom roms.
+A free SSH KaliLinux server without limited time. You can use this for test any tool or using kali linux tools or other something like building custom roms.
 
-You should use vpn while using Hacking Tools like `reconftw,...etc` to avoid ban.
+All network traffic goes via VPN and is anonymized (e.g. for `reconftw,...etc`). Masscan is allowed using your [own exit node](https://thc.org/segfault/wireguard).
 _________________________________________________
 # Server specifications
 - RAM : `128GB`
 - CPU : `AMD Ryzen 7 3700X (16)`
 - GPU : `NVIDIA GeForce GT 710`
-- Hard Size : `16GB` ==> If you want to increase this, text skyper in telegram and ask him to increase your server space, you can find the telegram group link at the bottom of the repo.
+- Hard Size : `16GB` ==> If you want to increase this, contact a [SysCop](https://t.me/thcorg) on their Telegram Channel.
 _________________________________________________
 # First: Install Packages
 _________________________________________________
@@ -35,9 +35,11 @@ bash linux.sh
 
 2: Open it and type `ssh root@segfault.net` in Hostname Or Ip address bar.
 
-3: Now,server will ask you password to connect type `segfault` then press enter.
+3: The server will ask you password to connect. Type `segfault` and press enter.
 
 4: Now server connected successfully. 
+
+5: Read the [Segfault PuTTY Guide](https://www.thc.org/segfault/faq/putty/).
 
 ____________________________________
 
@@ -59,26 +61,24 @@ segfault
 ```
 <img src="img/server.png"></a>
 ______________________________
-- Now you connected to server successfully.
+- You have now successfully connected to your server. Write down the SECRET shown on the screen. You need this SECRET to connect back to YOUR server.
 ______________________________
-# You should copy this ssh line from ssh -O to segfault.net
-- Like This `ssh -o "SetEnv SECRET=PlPtAROaKlMNmnlsMwSbyb" \root@teso.segfault.net`
+# You should copy this ssh line from ssh -o to segfault.net
+- Like This `ssh -o "SetEnv SECRET=PlPtAROaKlMNmnlsMwSbyb" root@teso.segfault.net`
 - <img src="img/ssh.jpg"></a>
 ___________________________________________________________________________________
-- You must keep this ssh with you, in order to connect to the server using it again. Do not connect using the ssh root@segfault.net command. You must connect using the ssh that you copied in order to save the work that you have done on the server.
+- You must use this string `ssh -o SetEnv SECRET=...` to connect back to _your_ server. Your data/work is associated with this `SECRET`. You can only access your data if you use the SECRET from the `ssh -o` line. Do not use `ssh root@segfault.net` again.
 ___________________________________________________________________________________
 # Now if you want to connect to server with vnc server follow steps:
+- Add `-L5900:0:5900` to your ssh line and connect to your server like this: `ssh -L5900:0:5900 -o 'SetEnv SECRET=...' root@...`.
+
 - Type this command in terminal
 ```sh 
 startxvnc
 ```
-- Then it will give you an SSH command again like this
+- Then it will look like this:  
 <img src="img/sshvnc.jpg"></a>
-- Take this ssh and open it in a new terminal and type the password
-```sh
-segfault
-```
-- Then open any vnc viewer i'm using Remmina who is coming with Linux.
+- Then open any vnc viewer. I'm using Remmina who is coming with Linux.
 
 - You can download VNC Viewer for android from <a href="https://play.google.com/store/apps/details?id=com.realvnc.viewer.android&hl=en_US&pli=1">Here</a>
 
@@ -101,6 +101,6 @@ ________________________________________________________________________________
 - Join our telegram channel: https://t.me/goosetech7014
 ___________________________________________________________________________________
 # Thanks to 
-- `Skyper` for this free server
+- [THC](https://www.thc.org) for this free server
 - join his telegram group https://t.me/thcorg
 - Website: https://www.thc.org
