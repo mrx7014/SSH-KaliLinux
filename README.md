@@ -17,7 +17,7 @@ ____________
 - You should use this scripts to install packages to connect to server if you using termux or linux.
 ____________
 
-- i'm programming a script for `Linux` and `termux` to install packages and connect to server with very easy way.
+- i'm coded a script for `Linux` and `termux` to install packages and connect to server with very easy way.
 
 - Termux <a href="https://github.com/termux/termux-app/releases">Download it from here</a> For Android.
 ```sh
