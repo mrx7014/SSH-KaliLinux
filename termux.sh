@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-# Coded By MRX7014 ♡
+# Coded By MRX7014
 
 
 base64 -d <<<"IF9fX19fIF9fX19fX19fX19fX19fICBfX19fICAgX19fICAgX18KfF8gICBffCAgX19ffCBfX18g
@@ -23,7 +23,7 @@ echo -e "\033[1;36m
 
 2] Run as GUI
 
-3] Contact Me on FB
+3] My linktree
 
 ====== MRX7014 =====
               
@@ -38,7 +38,7 @@ if [ $mrx == 1 ]
 then
     echo ""
 
-    echo -e "\033[1;31 WWelcome At Termux Setup\n"
+    echo -e "\033[1;31 WWelcome At Linux Setup\n"
 
     sleep 2
 
@@ -49,7 +49,7 @@ then
     sleep 2
 
 
-    echo -e "\033[1;33mNow, I I recommend you that Join now on Telegram Channel\n"
+    echo -e "\033[1;33mNow, I recommend you follow me on facebook\n"
 
 
     echo -e " \033[31m                  [*] Wait ...                  "
@@ -60,7 +60,7 @@ then
     sleep 5
 
 
-    xdg-open https://t.me/goosetech7014
+    xdg-open https://www.facebook.com/kemo.beah.73
 
     sleep 2
 
@@ -75,7 +75,7 @@ then
     echo -e "\033[1;31m Now Enter 'segfault'\n "
 
 
-    pkg update && pkg upgrade && pkg install openssh && ssh root@segfault.net
+    pkg update && pkg install openssh && ssh root@segfault.net
 
 
 
@@ -91,7 +91,7 @@ then
 
     echo""
 
-    xdg-open https://www.facebook.com/kemo.beah.73
+    xdg-open https://linktr.ee/mrx7014
 
 	      
 fi
