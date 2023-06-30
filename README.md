@@ -1,7 +1,8 @@
 # SSH KaliLinux
 A free SSH KaliLinux server without limited time. You can use this for test any tool or using kali linux tools or other something like building custom roms.
+____________
 
-teso is down so change your ssh from root@teso.segfault.net to root@8lgm.segfault.net
+- teso is down so change your ssh from root@teso.segfault.net to root@8lgm.segfault.net
 ____________
 All network traffic goes via VPN and is anonymized (e.g. for `reconftw,...etc`). Masscan is allowed using your [own exit node](https://thc.org/segfault/wireguard).
 ____________
