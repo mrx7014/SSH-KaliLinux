@@ -1,13 +1,15 @@
 # SSH KaliLinux
 A free SSH KaliLinux server without limited time. You can use this for test any tool or using kali linux tools or other something like building custom roms.
 
+# teso is down so change your ssh from root@teso.segfault.net to root@8lgm.segfault.net
+
 All network traffic goes via VPN and is anonymized (e.g. for `reconftw,...etc`). Masscan is allowed using your [own exit node](https://thc.org/segfault/wireguard).
 _________________________________________________
 # Server specifications
 - RAM : `128GB`
-- CPU : `AMD Ryzen 7 3700X (16)`
-- GPU : `NVIDIA GeForce GT 710`
-- Hard Size : `16GB` ==> If you want to increase this, contact a [SysCop](https://t.me/thcorg) on their Telegram Channel.
+- CPU : `AMD Ryzen 9 7950×3D (32) @ 4.200 GHz`
+- GPU : `AMD ATI 0e:00.0 Raphael`
+- Hard Size : `4GB` ==> If you want to increase this, contact a [SysCop](https://t.me/thcorg) on their Telegram Channel.
 _________________________________________________
 # First: Install Packages
 _________________________________________________
@@ -64,7 +66,7 @@ ______________________________
 - You have now successfully connected to your server. Write down the SECRET shown on the screen. You need this SECRET to connect back to YOUR server.
 ______________________________
 # You should copy this ssh line from ssh -o to segfault.net
-- Like This `ssh -o "SetEnv SECRET=PlPtAROaKlMNmnlsMwSbyb" root@teso.segfault.net`
+- Like This `ssh -o "SetEnv SECRET=PlPtAROaKlMNmnlsMwSbyb" root@8lgm.segfault.net`
 - <img src="img/ssh.jpg"></a>
 ___________________________________________________________________________________
 - You must use this string `ssh -o SetEnv SECRET=...` to connect back to _your_ server. Your data/work is associated with this `SECRET`. You can only access your data if you use the SECRET from the `ssh -o` line. Do not use `ssh root@segfault.net` again.
