@@ -4,17 +4,17 @@ A free SSH KaliLinux server without limited time. You can use this for test any 
 teso is down so change your ssh from root@teso.segfault.net to root@8lgm.segfault.net
 <hr>
 All network traffic goes via VPN and is anonymized (e.g. for `reconftw,...etc`). Masscan is allowed using your [own exit node](https://thc.org/segfault/wireguard).
-_________________________________________________
+<hr>
 # Server specifications
 - RAM : `128GB`
 - CPU : `AMD Ryzen 9 7950×3D (32) @ 4.200 GHz`
 - GPU : `AMD ATI 0e:00.0 Raphael`
 - Hard Size : `4GB` ==> If you want to increase this, contact a [SysCop](https://t.me/thcorg) on their Telegram Channel.
-_________________________________________________
+<hr>
 # First: Install Packages
-_________________________________________________
+<hr>
 - You should use this scripts to install packages to connect to server if you using termux or linux.
-______________________
+<hr>
 
 - i made a script for `Linux` and `termux` to install packages and connect to server with very easy way.
 
@@ -43,7 +43,7 @@ bash linux.sh
 
 5: Read the [Segfault PuTTY Guide](https://www.thc.org/segfault/faq/putty/).
 
-____________________________________
+<hr>
 
 - ios
 
@@ -55,22 +55,22 @@ Download Termius from <a href="https://apps.apple.com/us/app/termius-terminal-ss
 
 Download VNC Viewer from <a href="https://apps.apple.com/us/app/vnc-viewer-remote-desktop/id352019548">Here</a>
 
-_______________________
+<hr>
 
 - Password for connect
 ```sh
 segfault
 ```
 <img src="img/server.png"></a>
-______________________________
+<hr>
 - You have now successfully connected to your server. Write down the SECRET shown on the screen. You need this SECRET to connect back to YOUR server.
-______________________________
+<hr>
 # You should copy this ssh line from ssh -o to segfault.net
 - Like This `ssh -o "SetEnv SECRET=PlPtAROaKlMNmnlsMwSbyb" root@8lgm.segfault.net`
 - <img src="img/ssh.jpg"></a>
-___________________________________________________________________________________
+<hr>
 - You must use this string `ssh -o SetEnv SECRET=...` to connect back to _your_ server. Your data/work is associated with this `SECRET`. You can only access your data if you use the SECRET from the `ssh -o` line. Do not use `ssh root@segfault.net` again.
-___________________________________________________________________________________
+<hr>
 # Now if you want to connect to server with vnc server follow steps:
 - Add `-L5900:0:5900` to your ssh line and connect to your server like this: `ssh -L5900:0:5900 -o 'SetEnv SECRET=...' root@...`.
 
@@ -88,7 +88,7 @@ startxvnc
 
 - For Linux Remmina installed already.
 
-_________________________________________
+<hr>
 
 - Then Type this ip in VNC Viewer
 
@@ -97,10 +97,10 @@ _________________________________________
 ```
 <img src="img/sshdisplay.png"></a>
 - Now you are successfully connected to the server with VNC server,Enjoy it.
-___________________________________________________________________________________
+<hr>
 # Contact US
 - Linktree: https://linktr.ee/mrx7014
-___________________________________________________________________________________
+<hr>
 # Thanks to 
 - [THC](https://www.thc.org) for this free server
 - join his telegram group https://t.me/thcorg
