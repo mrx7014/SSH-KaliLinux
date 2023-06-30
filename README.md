@@ -63,8 +63,9 @@ segfault
 ```
 <img src="img/server.png"></a>
 ____________
+
 - You have now successfully connected to your server. Write down the SECRET shown on the screen. You need this SECRET to connect back to YOUR server.
-<hr>
+____________
 # You should copy this ssh line from ssh -o to segfault.net
 - Like This `ssh -o "SetEnv SECRET=PlPtAROaKlMNmnlsMwSbyb" root@8lgm.segfault.net`
 - <img src="img/ssh.jpg"></a>
