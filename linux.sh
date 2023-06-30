@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-# Coded By MRX7014 ♡
+# Coded By MRX7014
 
 
 base64 -d <<<"ICBfICAgICAgX19fX18gXyAgIF8gXyAgICBfX18gICBfXyAgICAgCiB8IHwgICAgfF8gICBffCBc
