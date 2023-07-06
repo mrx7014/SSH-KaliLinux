@@ -7,10 +7,12 @@ ____________
 All network traffic goes via VPN and is anonymized (e.g. for `reconftw,...etc`). Masscan is allowed using your [own exit node](https://thc.org/segfault/wireguard).
 ____________
 # Server specifications
-- RAM : `128GB`
+- RAM : `4GB`
 - CPU : `AMD Ryzen 9 7950×3D (32) @ 4.200 GHz`
 - GPU : `AMD ATI 0e:00.0 Raphael`
-- Hard Size : `4GB` ==> If you want to increase this, contact a [SysCop](https://t.me/thcorg) on their Telegram Channel.
+- Hard Size : `16GB`
+<br>
+- If you want to increase this, contact a [SysCop](https://t.me/thcorg) on their Telegram Channel.
 ____________
 # First: Install Packages
 ____________
@@ -44,6 +46,9 @@ bash linux.sh
 
 5: Read the [Segfault PuTTY Guide](https://www.thc.org/segfault/faq/putty/).
 
+<br>
+
+- You can use https://shell.segfault.net too to connect to server from windows or any other device.
 ____________
 
 - ios
