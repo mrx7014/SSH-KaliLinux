@@ -45,7 +45,7 @@ bash linux.sh
 4: Now server connected successfully. 
 
 5: Read the [Segfault PuTTY Guide](https://www.thc.org/segfault/faq/putty/).
-___
+
 - You can use https://shell.segfault.net too to connect to server from windows or any other device.
 ____________
 
