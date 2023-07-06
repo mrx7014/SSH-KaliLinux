@@ -11,7 +11,7 @@ ____________
 - CPU : `AMD Ryzen 9 7950×3D (32) @ 4.200 GHz`
 - GPU : `AMD ATI 0e:00.0 Raphael`
 - Hard Size : `16GB`
-<br>
+- 
 - If you want to increase this, contact a [SysCop](https://t.me/thcorg) on their Telegram Channel.
 ____________
 # First: Install Packages
@@ -45,9 +45,7 @@ bash linux.sh
 4: Now server connected successfully. 
 
 5: Read the [Segfault PuTTY Guide](https://www.thc.org/segfault/faq/putty/).
-
-<br>
-
+___
 - You can use https://shell.segfault.net too to connect to server from windows or any other device.
 ____________
 
