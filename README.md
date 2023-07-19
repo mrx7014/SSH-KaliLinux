@@ -51,11 +51,11 @@ ____________
 
 - ios
 
-You can use Termuis app to connect to server and use vnc viewer too connect to gui `Both are available on the App store`
+You can use *ISH (like termux)* to connect to server and use vnc viewer too connect to gui <b>Both are available on the App store</b>
 
-And you don't need to install any packages,just connect to server from termius app with this command `ssh root@8lgm.segfault.net`.
+You don't need to install any packages,just connect to server from  ISH App with this command `ssh root@8lgm.segfault.net`.
 
-Download Termius from <a href="https://apps.apple.com/us/app/termius-terminal-ssh-client/id549039908">Here</a>
+Download ISH From <a href="https://apps.apple.com/us/app/ish-shell/id1436902243">Here</a>
 
 Download VNC Viewer from <a href="https://apps.apple.com/us/app/vnc-viewer-remote-desktop/id352019548">Here</a>
 
@@ -87,11 +87,12 @@ startxvnc
 <img src="img/sshvnc.jpg"></a>
 - Then open any vnc viewer. I'm using Remmina who is coming with Linux.
 
-- You can download VNC Viewer for android from <a href="https://play.google.com/store/apps/details?id=com.realvnc.viewer.android&hl=en_US&pli=1">Here</a>
+- You can download VNC Viewer for
+android from <a href="https://play.google.com/store/apps/details?id=com.realvnc.viewer.android&hl=en_US&pli=1">Here</a>
 
 - For Windows From <a href="https://www.realvnc.com/en/connect/download/viewer/windows/">Here</a>
 
-- For Linux Remmina installed already.
+- For Linux *Remmina* installed already on ubuntu and if it not installed check this website *https://remmina.org/how-to-install-remmina/*
 
 ____________
 
@@ -108,5 +109,5 @@ ____________
 ____________
 # Thanks to 
 - [THC](https://www.thc.org) for this free server
-- join his telegram group https://t.me/thcorg
+- join telegram group https://t.me/thcorg
 - Website: https://www.thc.org
