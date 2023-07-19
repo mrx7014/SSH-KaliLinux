@@ -7,8 +7,10 @@ ____________
 All network traffic goes via VPN and is anonymized (e.g. for `reconftw,...etc`). Masscan is allowed using your [own exit node](https://thc.org/segfault/wireguard).
 ____________
 # Server specifications
-- RAM : `4GB`
-- CPU : `AMD Ryzen 9 7950×3D (32) @ 4.200 GHz`
+- RAM : `2GB`
+- Kernel: `5.15.0-73-generic`
+- Shell: `zsh 5.9`
+- CPU : `AMD Ryzen 9 7950X3D (32) @ 4.200GHz`
 - GPU : `AMD ATI 0e:00.0 Raphael`
 - Hard Size : `16GB`
 - 
