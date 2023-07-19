@@ -51,7 +51,7 @@ ____________
 
 - ios
 
-You can use *ISH (like termux)* to connect to server and use vnc viewer too connect to gui <b>Both are available on the App store</b>
+You can use **ISH (like termux)** to connect to server and use vnc viewer too connect to gui <b>Both are available on the App store</b>
 
 You don't need to install any packages,just connect to server from  ISH App with this command `ssh root@8lgm.segfault.net`.
 
@@ -92,7 +92,7 @@ android from <a href="https://play.google.com/store/apps/details?id=com.realvnc.
 
 - For Windows From <a href="https://www.realvnc.com/en/connect/download/viewer/windows/">Here</a>
 
-- For Linux *Remmina* installed already on ubuntu and if it not installed check this website *https://remmina.org/how-to-install-remmina/*
+- For Linux **Remmina** installed already on ubuntu and if it not installed check this website **https://remmina.org/how-to-install-remmina/**
 
 ____________
 
