@@ -107,6 +107,7 @@ ____________
 ____________
 # Contact US
 - Linktree: https://linktr.ee/mrx7014
+- Donate: https://bmc.link/mrx7014
 ____________
 # Thanks to 
 - [THC](https://www.thc.org) for this free server
