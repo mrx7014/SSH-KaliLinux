@@ -2,7 +2,7 @@
 A free SSH KaliLinux server without limited time. You can use this for test any tool or using kali linux tools or other something like building custom roms.
 ____________
 
-- <b>teso is down so change your ssh from root@teso.segfault.net to root@8lgm.segfault.net</b>
+- **teso is back again,you can connect with ssh root@segfault.net**
 ____________
 All network traffic goes via VPN and is anonymized (e.g. for `reconftw,...etc`). Masscan is allowed using your [own exit node](https://thc.org/segfault/wireguard).
 ____________
@@ -69,7 +69,8 @@ segfault
 <img src="img/server.png"></a>
 ____________
 
-- You have now successfully connected to your server. Write down the SECRET shown on the screen. You need this SECRET to connect back to YOUR server.
+>You have now successfully connected to your server. Write down the SECRET shown on the screen. You need this SECRET to connect back to YOUR server.
+>
 ____________
 # You should copy this ssh line from ssh -o to segfault.net
 - Like This `ssh -o "SetEnv SECRET=PlPtAROaKlMNmnlsMwSbyb" root@8lgm.segfault.net`
