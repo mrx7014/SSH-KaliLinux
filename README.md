@@ -24,15 +24,13 @@ ____________
 
 - Termux <a href="https://github.com/termux/termux-app/releases">Download it from here</a> For Android.
 ```sh
-curl https://raw.githubusercontent.com/mrx7014/SSH-KaliLinux/main/termux.sh >> termux.sh
-bash termux.sh
+curl https://raw.githubusercontent.com/mrx7014/SSH-KaliLinux/main/termux.sh >> termux.sh ; bash termux.sh
 ```
 
 - Linux
 
 ```sh
-curl https://raw.githubusercontent.com/mrx7014/SSH-KaliLinux/main/linux.sh >> linux.sh
-bash linux.sh
+curl https://raw.githubusercontent.com/mrx7014/SSH-KaliLinux/main/linux.sh >> linux.sh ; bash linux.sh
 ```
 
 - Windows
