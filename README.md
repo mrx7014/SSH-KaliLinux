@@ -22,7 +22,7 @@ ____________
 # First: Install Packages
 
 - You should use this scripts to install packages to connect to server if you using termux or linux.
-- 
+
 - i coded a script for `Linux` and `termux` to install packages and connect to server with very easy way.
 
 - Termux <a href="https://github.com/termux/termux-app/releases">Download it from here</a> For Android.
