@@ -47,7 +47,6 @@ curl https://raw.githubusercontent.com/mrx7014/SSH-KaliLinux/main/linux.sh >> li
 4: Now server connected successfully. 
 
 - You can use https://shell.segfault.net too to connect to server from windows or any other device.
-____________
 
 - ios
 
@@ -59,8 +58,6 @@ Download ISH From <a href="https://apps.apple.com/us/app/ish-shell/id1436902243"
 
 Download VNC Viewer from <a href="https://apps.apple.com/us/app/vnc-viewer-remote-desktop/id352019548">Here</a>
 
-____________
-
 - Password for connect
 ```sh
 segfault
@@ -71,6 +68,7 @@ ____________
 >You have now successfully connected to your server. Write down the SECRET shown on the screen. You need this SECRET to connect back to YOUR server.
 >
 ____________
+
 # You should copy this ssh line from ssh -o to segfault.net
 - Like This `ssh -o "SetEnv SECRET=PlPtAROaKlMNmnlsMwSbyb" root@8lgm.segfault.net`
 - <img src="img/ssh.jpg"></a>
@@ -105,6 +103,7 @@ ____________
 <img src="img/sshdisplay.png"></a>
 - Now you are successfully connected to the server with VNC server,Enjoy it.
 ____________
+
 # Contact US
 - Linktree: https://linktr.ee/mrx7014
 - Donate: https://bmc.link/mrx7014
