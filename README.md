@@ -5,23 +5,24 @@ ____________
 - **If you want to use Ubuntu in this server check this repo https://github.com/mrx7014/Ubuntu_on_Segfault**
 
 - **teso is back again,you can connect with ssh root@segfault.net**
+
+- All network traffic goes via VPN and is anonymized (e.g. for `reconftw,...etc`). Masscan is allowed using your [own exit node].
 ____________
-All network traffic goes via VPN and is anonymized (e.g. for `reconftw,...etc`). Masscan is allowed using your [own exit node](https://thc.org/segfault/wireguard).
-____________
+
 # Server specifications
+
 - RAM : `2GB`
 - Kernel: `5.15.0-73-generic`
 - Shell: `zsh 5.9`
 - CPU : `AMD Ryzen 9 7950X3D (32) @ 4.200GHz`
 - GPU : `AMD ATI 0e:00.0 Raphael`
 - Hard Size : `16GB`
-- If you want to increase this, contact a [SysCop](https://t.me/thcorg) on their Telegram Channel.
-____________
-# First: Install Packages
-____________
-- You should use this scripts to install packages to connect to server if you using termux or linux.
 ____________
 
+# First: Install Packages
+
+- You should use this scripts to install packages to connect to server if you using termux or linux.
+- 
 - i coded a script for `Linux` and `termux` to install packages and connect to server with very easy way.
 
 - Termux <a href="https://github.com/termux/termux-app/releases">Download it from here</a> For Android.
@@ -44,8 +45,6 @@ curl https://raw.githubusercontent.com/mrx7014/SSH-KaliLinux/main/linux.sh >> li
 3: The server will ask you password to connect. Type `segfault` and press enter.
 
 4: Now server connected successfully. 
-
-5: Read the [Segfault PuTTY Guide](https://www.thc.org/segfault/faq/putty/).
 
 - You can use https://shell.segfault.net too to connect to server from windows or any other device.
 ____________
@@ -75,9 +74,9 @@ ____________
 # You should copy this ssh line from ssh -o to segfault.net
 - Like This `ssh -o "SetEnv SECRET=PlPtAROaKlMNmnlsMwSbyb" root@8lgm.segfault.net`
 - <img src="img/ssh.jpg"></a>
-____________
+
 - You must use this string `ssh -o SetEnv SECRET=...` to connect back to _your_ server. Your data/work is associated with this `SECRET`. You can only access your data if you use the SECRET from the `ssh -o` line. Do not use `ssh root@segfault.net` again.
-____________
+
 # Now if you want to connect to server with vnc server follow steps:
 - Add `-L5900:0:5900` to your ssh line and connect to your server like this: `ssh -L5900:0:5900 -o 'SetEnv SECRET=...' root@...`.
 
@@ -109,8 +108,3 @@ ____________
 # Contact US
 - Linktree: https://linktr.ee/mrx7014
 - Donate: https://bmc.link/mrx7014
-____________
-# Thanks to 
-- [THC](https://www.thc.org) for this free server
-- join telegram group https://t.me/thcorg
-- Website: https://www.thc.org
