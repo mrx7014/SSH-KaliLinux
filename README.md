@@ -17,7 +17,8 @@ ____________
 - CPU : `AMD Ryzen 9 7950X3D (32) @ 4.200GHz`
 - GPU : `AMD ATI 0e:00.0 Raphael`
 - Hard Size : `16GB`
-If you want to increase this, contact a <a href="https://t.me/thcorg">SysCop</a> on their Telegram Channel.
+
+**If you want to increase this, contact a <a href="https://t.me/thcorg">SysCop</a> on their Telegram Channel.**
 ____________
 
 # First: Install Packages
