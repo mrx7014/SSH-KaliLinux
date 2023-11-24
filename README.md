@@ -6,7 +6,7 @@ ____________
 
 - **teso is back again,you can connect with ssh root@segfault.net**
 
-- All network traffic goes via VPN and is anonymized (e.g. for `reconftw,...etc`). Masscan is allowed using your [own exit node].
+- All network traffic goes via VPN and is anonymized (e.g. for `reconftw,...etc`). Masscan is allowed using your <a href="https://thc.org/segfault/wireguard">own exit node</a>.
 ____________
 
 # Server specifications
@@ -17,6 +17,7 @@ ____________
 - CPU : `AMD Ryzen 9 7950X3D (32) @ 4.200GHz`
 - GPU : `AMD ATI 0e:00.0 Raphael`
 - Hard Size : `16GB`
+If you want to increase this, contact a <a href="https://t.me/thcorg">SysCop</a> on their Telegram Channel.
 ____________
 
 # First: Install Packages
@@ -45,6 +46,8 @@ curl https://raw.githubusercontent.com/mrx7014/SSH-KaliLinux/main/linux.sh >> li
 3: The server will ask you password to connect. Type `segfault` and press enter.
 
 4: Now server connected successfully. 
+
+5: Read the <a href="https://www.thc.org/segfault/faq/putty/">Segfault PuTTY Guide.</a>
 
 - You can use https://shell.segfault.net too to connect to server from windows or any other device.
 
@@ -107,3 +110,10 @@ ____________
 # Contact US
 - Linktree: https://linktr.ee/mrx7014
 - Donate: https://bmc.link/mrx7014
+
+____________
+
+# Thanks To:
+- <a href="https://www.thc.org/">THC</a> for this free server
+- join telegram group: https://t.me/thcorg
+- Website: https://www.thc.org
