@@ -6,7 +6,8 @@ ____________
 
 - **teso is back again,you can connect with ssh root@segfault.net**
 
-- All network traffic goes via VPN and is anonymized (e.g. for `reconftw,...etc`). Masscan is allowed using your <a href="https://thc.org/segfault/wireguard">own exit node</a>.
+- All network traffic goes via VPN and is anonymized (e.g. for `reconftw,...etc`).
+- Masscan is allowed using your <a href="https://thc.org/segfault/wireguard">own exit node</a>.
 ____________
 
 # Server specifications
