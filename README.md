@@ -1,10 +1,11 @@
 # SSH KaliLinux
-A free SSH KaliLinux server without limited time. You can use this for test any tool or using kali linux tools or other something like building custom roms.
+A free SSH Kali Linux server without limited time. You can use this for test any tool or using kali linux tools or other somethings like building custom roms or any another thing.
 ____________
 
 - **If you want to use Ubuntu in this server check this repo https://github.com/mrx7014/Ubuntu_on_Segfault**
 
 - All network traffic goes via VPN and is anonymized (e.g. for `reconftw,...etc`).
+
 - Masscan is allowed using your <a href="https://thc.org/segfault/wireguard">own exit node</a>.
 ____________
 
@@ -22,23 +23,26 @@ ____________
 
 # First: Install Packages
 
-- You should use this scripts to install packages to connect to server if you using termux or linux.
+- You should install this packages to connect to server if you are using termux or linux.
 
-- i coded a script for `Linux` and `termux` to install packages and connect to server with very easy way.
+<a href="https://github.com/termux/termux-app/releases">Download Termux from here</a>.
 
-- Termux <a href="https://github.com/termux/termux-app/releases">Download it from here</a> For Android.
+# Termux
+
 ```sh
-curl https://raw.githubusercontent.com/mrx7014/SSH-KaliLinux/main/termux.sh >> termux.sh ; bash termux.sh
+pkg update && pkg upgrade && pkg install openssh
 ```
 
-- Linux
+# Linux
 
 ```sh
-curl https://raw.githubusercontent.com/mrx7014/SSH-KaliLinux/main/linux.sh >> linux.sh ; bash linux.sh
+sudo apt update && sudo apt install openssh-client
 ```
 ____
 
 # Windows
+
+- You can connect to the server from CMD,if it not working use this guide here.
 
 1: Download <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">Putty</a> and choose pkg `32-bit x86`.
 
@@ -50,19 +54,20 @@ ____
 
 5: Read the <a href="https://www.thc.org/segfault/faq/putty/">Segfault PuTTY Guide.</a>
 
-- You can use https://shell.segfault.net too to connect to server from windows or any other device.
+- You can use https://shell.segfault.net to connect to the server from browser too if you have any errors with this guides.
 _______
 
 # ios
 
-- You can use **ISH (like termux)** to connect to server and use vnc viewer too connect to gui <b>Both are available on the App store</b>
+- You can use **ISH** 'it's like termux' to connect to server, And RVNC Viewer to use GUI.
 
-- You don't need to install any packages,just connect to server from  ISH App with this command `ssh root@8lgm.segfault.net`.
+<b>Both of them are available on the App store</b>
 
-Download ISH From <a href="https://apps.apple.com/us/app/ish-shell/id1436902243">Here</a>
+- Download ISH From <a href="https://apps.apple.com/us/app/ish-shell/id1436902243">Here</a>
 
-Download VNC Viewer from <a href="https://apps.apple.com/us/app/vnc-viewer-remote-desktop/id352019548">Here</a>
+- Download RVNC from <a href="https://apps.apple.com/us/app/vnc-viewer-remote-desktop/id352019548">Here</a>
 
+- You don't need to install any packages on ISH,just connect to the server with this command `ssh root@8lgm.segfault.net`.
 ____
 
 - Password for connect
@@ -97,11 +102,11 @@ startxvnc
 - Then open any vnc viewer. I'm using Remmina who is coming with Linux.
 
 - You can download VNC Viewer for
-android from <a href="https://play.google.com/store/apps/details?id=com.realvnc.viewer.android&hl=en_US&pli=1">Here</a>
+Android from <a href="https://play.google.com/store/apps/details?id=com.realvnc.viewer.android&hl=en_US&pli=1">Here</a>
 
 - For Windows From <a href="https://www.realvnc.com/en/connect/download/viewer/windows/">Here</a>
 
-- For Linux **Remmina** installed already on ubuntu and if it not installed check this website **https://remmina.org/how-to-install-remmina/**
+- For Linux **Remmina** is installed already on ubuntu, if it not installed check this website **https://remmina.org/how-to-install-remmina/**
 
 ____________
 
