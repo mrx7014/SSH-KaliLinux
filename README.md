@@ -25,14 +25,13 @@ ____________
 
 - You should install this packages to connect to server if you are using termux or linux.
 
-<a href="https://github.com/termux/termux-app/releases">Download Termux from here</a>.
-
 # Termux
 
 ```sh
 pkg update && pkg upgrade && pkg install openssh
 ```
-
+<small>Download Termux from<a href="https://github.com/termux/termux-app/releases">here</a></small>
+  
 # Linux
 
 ```sh
