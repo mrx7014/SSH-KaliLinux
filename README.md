@@ -4,8 +4,6 @@ ____________
 
 - **If you want to use Ubuntu in this server check this repo https://github.com/mrx7014/Ubuntu_on_Segfault**
 
-- **teso is back again,you can connect with ssh root@segfault.net**
-
 - All network traffic goes via VPN and is anonymized (e.g. for `reconftw,...etc`).
 - Masscan is allowed using your <a href="https://thc.org/segfault/wireguard">own exit node</a>.
 ____________
@@ -38,8 +36,9 @@ curl https://raw.githubusercontent.com/mrx7014/SSH-KaliLinux/main/termux.sh >> t
 ```sh
 curl https://raw.githubusercontent.com/mrx7014/SSH-KaliLinux/main/linux.sh >> linux.sh ; bash linux.sh
 ```
+____
 
-- Windows
+# Windows
 
 1: Download <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">Putty</a> and choose pkg `32-bit x86`.
 
@@ -52,16 +51,19 @@ curl https://raw.githubusercontent.com/mrx7014/SSH-KaliLinux/main/linux.sh >> li
 5: Read the <a href="https://www.thc.org/segfault/faq/putty/">Segfault PuTTY Guide.</a>
 
 - You can use https://shell.segfault.net too to connect to server from windows or any other device.
+_______
 
-- ios
+# ios
 
-You can use **ISH (like termux)** to connect to server and use vnc viewer too connect to gui <b>Both are available on the App store</b>
+- You can use **ISH (like termux)** to connect to server and use vnc viewer too connect to gui <b>Both are available on the App store</b>
 
-You don't need to install any packages,just connect to server from  ISH App with this command `ssh root@8lgm.segfault.net`.
+- You don't need to install any packages,just connect to server from  ISH App with this command `ssh root@8lgm.segfault.net`.
 
 Download ISH From <a href="https://apps.apple.com/us/app/ish-shell/id1436902243">Here</a>
 
 Download VNC Viewer from <a href="https://apps.apple.com/us/app/vnc-viewer-remote-desktop/id352019548">Here</a>
+
+____
 
 - Password for connect
 ```sh
