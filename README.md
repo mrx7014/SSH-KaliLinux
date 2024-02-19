@@ -66,8 +66,6 @@ _______
 
 - Download RVNC from <a href="https://apps.apple.com/us/app/vnc-viewer-remote-desktop/id352019548">Here</a>
 
-______
-
 **You don't need to install any packages on ISH,just connect to the server with this command `ssh root@8lgm.segfault.net`.**
 
 ____
