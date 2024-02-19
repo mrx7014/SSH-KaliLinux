@@ -68,7 +68,7 @@ _______
 
 **You don't need to install any packages on ISH,just connect to the server with this command:**
 ```sh
-ssh root@8lgm.segfault.net`
+ssh root@8lgm.segfault.net
 ```
 ____
 
