@@ -78,14 +78,17 @@ ____________
 
 # You should copy this ssh line from ssh -o to segfault.net
 - Like This `ssh -o "SetEnv SECRET=PlPtAROaKlMNmnlsMwSbyb" root@8lgm.segfault.net`
-- <img src="img/ssh.jpg"></a>
+
+<img src="img/ssh.jpg"></a>
 
 - You must use this string `ssh -o SetEnv SECRET=...` to connect back to _your_ server. Your data/work is associated with this `SECRET`. You can only access your data if you use the SECRET from the `ssh -o` line. Do not use `ssh root@segfault.net` again.
 
 # Now if you want to connect to server with vnc server follow steps:
+
 - Add `-L5900:0:5900` to your ssh line and connect to your server like this: `ssh -L5900:0:5900 -o 'SetEnv SECRET=...' root@...`.
 
 - Type this command in terminal
+
 ```sh 
 startxvnc
 ```
