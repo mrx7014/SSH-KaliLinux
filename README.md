@@ -30,7 +30,7 @@ ____________
 ```sh
 pkg update && pkg upgrade && pkg install openssh
 ```
-<small>Download Termux from<a href="https://github.com/termux/termux-app/releases">here</a></small>
+<small>Download Termux from <a href="https://github.com/termux/termux-app/releases">here</a></small>
   
 # Linux
 
