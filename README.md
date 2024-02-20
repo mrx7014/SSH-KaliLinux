@@ -113,7 +113,7 @@ Android from <a href="https://play.google.com/store/apps/details?id=com.realvnc.
 
 - For Windows From <a href="https://www.realvnc.com/en/connect/download/viewer/windows/">Here</a>
 
-- For Linux **Remmina** is installed already on ubuntu, if it not installed check this website **https://remmina.org/how-to-install-remmina/**
+- For Linux **Remmina** is installed already on ubuntu, if it not installed check this website <a href="https://remmina.org/how-to-install-remmina/">Here</a>
 
 - You can use RVNC Viewer on Linux too, See <a href="https://www.realvnc.com/en/connect/download/viewer/linux/">This</a>
 ____________
