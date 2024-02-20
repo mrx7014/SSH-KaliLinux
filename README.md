@@ -101,7 +101,12 @@ startxvnc
 ```
 - Then it will look like this:  
 <img src="img/sshvnc.jpg"></a>
-- Then open any vnc viewer. I'm using Remmina who is coming with Linux.
+
+- Now open another terminal and enter the ssh that gives to you after enter `startxvnc`, enter password `segfault`.
+
+<small>ssh should be like this `ssh -L5900:0:5900 -o 'SetEnv SECRET=...' root@...`</small>
+
+- Then open any vnc viewer.
 
 - You can download VNC Viewer for
 Android from <a href="https://play.google.com/store/apps/details?id=com.realvnc.viewer.android&hl=en_US&pli=1">Here</a>
@@ -110,9 +115,10 @@ Android from <a href="https://play.google.com/store/apps/details?id=com.realvnc.
 
 - For Linux **Remmina** is installed already on ubuntu, if it not installed check this website **https://remmina.org/how-to-install-remmina/**
 
+- You can use RVNC Viewer on Linux too, See <a href="https://www.realvnc.com/en/connect/download/viewer/linux/">This</a>
 ____________
 
-- Then Type this ip in VNC Viewer
+- Enter this ip in your VNC Viewer
 
 ```sh
 127.0.0.1:5900
