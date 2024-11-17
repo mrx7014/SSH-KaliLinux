@@ -25,21 +25,21 @@ ____________
 
 - You should install this packages to connect to server if you are using termux or linux.
 
-# Termux
+### Termux
 
 ```sh
 pkg update && pkg upgrade && pkg install openssh
 ```
 <small>Download Termux from <a href="https://github.com/termux/termux-app/releases">here</a></small>
   
-# Linux
+### Linux
 
 ```sh
 sudo apt update && sudo apt install openssh-client
 ```
 ____
 
-# Windows
+### Windows
 
 - You can connect to the server from CMD,if it not working use this guide here.
 
@@ -56,7 +56,7 @@ ____
 - You can use https://shell.segfault.net to connect to the server from browser too if you have any errors with this guides.
 _______
 
-# ios
+### ios
 
 - You can use **ISH** 'it's like termux' to connect to server, And RVNC Viewer to use GUI.
 
@@ -79,18 +79,21 @@ segfault
 <img src="img/server.png"></a>
 ____________
 
->You have now successfully connected to your server. Write down the SECRET shown on the screen. You need this SECRET to connect back to YOUR server.
->
+- You have now successfully connected to your server. Write down the SECRET shown on the screen. You need this SECRET to connect back to YOUR server.
 ____________
 
-# You should copy this ssh line from ssh -o to segfault.net
+### You should copy this ssh line from ssh -o to segfault.net
 - Like This `ssh -o "SetEnv SECRET=PlPtAROaKlMNmnlsMwSbyb" root@8lgm.segfault.net`
 
 <img src="img/ssh.jpg"></a>
 
 - You must use this string `ssh -o SetEnv SECRET=...` to connect back to _your_ server. Your data/work is associated with this `SECRET`. You can only access your data if you use the SECRET from the `ssh -o` line. Do not use `ssh root@segfault.net` again.
 
-# Now if you want to connect to server with vnc server follow steps:
+### Now if you want to connect to server with vnc server follow steps:
+
+> [!IMPORTANT]
+> You must use tmate and 247.py script if you will use this server for 24/7, Check the end of the repo to know how to use it
+> 
 
 - Add `-L5900:0:5900` to your ssh line and connect to your server like this: `ssh -L5900:0:5900 -o 'SetEnv SECRET=...' root@...`.
 
@@ -127,13 +130,25 @@ ____________
 - Now you are successfully connected to the server with VNC server,Enjoy it.
 ____________
 
-# Contact US
+- To make server run 24/7 use this python script
+```sh
+git clone https://github.com/mrx7014/SSH-KaliLinux;cd SSH-KaliLinux;python3 247.py
+```
+
+> [!IMPORTANT] 
+> If you will use this server for a long time you should make an tmate ssh and login to the server by tmate ssh daily to avoid server shutdown
+> 
+
+<hr />
+
+
+### Contact US
 - Linktree: https://linktr.ee/mrx7014
 - Donate: https://bmc.link/mrx7014
 
 ____________
 
-# Thanks To:
+### Thanks To:
 - <a href="https://www.thc.org/">THC</a> for this free server
 - join telegram group: https://t.me/thcorg
 - Website: https://www.thc.org
