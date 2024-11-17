@@ -58,7 +58,7 @@ _______
 
 ### ios
 
-- You can use **ISH** 'it's like termux' to connect to server, And RVNC Viewer to use GUI.
+- You can use **ISH** 'it's like termux' to connect to server and RVNC Viewer to use GUI.
 
 <b>Both of them are available on the App store</b>
 
@@ -79,7 +79,7 @@ segfault
 <img src="img/server.png"></a>
 ____________
 
-- You have now successfully connected to your server. Write down the SECRET shown on the screen. You need this SECRET to connect back to YOUR server.
+### Now you successfully connected to your server. Write down the SECRET shown on the screen. You need this SECRET to connect back to YOUR server.
 ____________
 
 ### You should copy this ssh line from ssh -o to segfault.net
@@ -130,7 +130,7 @@ ____________
 - Now you are successfully connected to the server with VNC server,Enjoy it.
 ____________
 
-- To make server run 24/7 use this python script
+### To make server run 24/7 use this python script
 ```sh
 git clone https://github.com/mrx7014/SSH-KaliLinux;cd SSH-KaliLinux;python3 247.py
 ```
