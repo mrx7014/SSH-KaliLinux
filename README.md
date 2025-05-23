@@ -80,6 +80,11 @@ segfault
 ____________
 
 ### Now you successfully connected to your server. Write down the SECRET shown on the screen. You need this SECRET to connect back to YOUR server.
+
+### If you get error (No Public Key) when update run this command:
+```sh
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ED65462EC8D5E4C5
+```
 ____________
 
 ### You should copy this ssh line from ssh -o to segfault.net
