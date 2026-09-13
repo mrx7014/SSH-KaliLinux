@@ -1,160 +1,232 @@
-# SSH KaliLinux
-A free SSH Kali Linux server without limited time. You can use this for test any tool or using kali linux tools or other somethings like building custom roms or any another thing.
-____________
+# SSH Kali Linux on Segfault
 
-- **If you want to use Ubuntu in this server check this repo https://github.com/mrx7014/Ubuntu_on_Segfault**
+A practical guide for connecting to a temporary Kali Linux environment provided through [THC Segfault][1]. Use it for authorized security testing, learning, development, and other legitimate workloads.
 
-- All network traffic goes via VPN and is anonymized (e.g. for `reconftw,...etc`).
+> **Important:** This repository does not create or host the server. It documents a connection workflow for a third-party service. Availability, limits, credentials, images, and server specifications may change. Always follow the provider's current documentation and terms of use.
 
-- Masscan is allowed using your <a href="https://thc.org/segfault/wireguard">own exit node</a>.
-____________
+## Contents
 
-# Server specifications
+- [What this repository provides](#what-this-repository-provides)
+- [Requirements](#requirements)
+- [Connect from a client](#connect-from-a-client)
+- [Reconnect to your assigned server](#reconnect-to-your-assigned-server)
+- [Optional VNC access](#optional-vnc-access)
+- [The `247.py` helper](#the-247py-helper)
+- [Security and acceptable use](#security-and-acceptable-use)
+- [Troubleshooting](#troubleshooting)
+- [Project files](#project-files)
+- [Contributing](#contributing)
+- [Credits](#credits)
 
-- RAM : `2GB`
-- Kernel: `5.15.0-73-generic`
-- Shell: `zsh 5.9`
-- CPU : `AMD Ryzen 9 7950X3D (32) @ 4.200GHz`
-- GPU : `AMD ATI 0e:00.0 Raphael`
-- Hard Size : `16GB`
+## What this repository provides
 
-**If you want to increase this, contact a <a href="https://t.me/thcorg">SysCop</a> on their Telegram Channel.**
-____________
+This repository contains:
 
-# First: Install Packages
+- Platform-neutral SSH connection instructions.
+- Optional instructions for forwarding a VNC display over SSH.
+- `247.py`, a small terminal timer that can be used as a visible session indicator.
+- Screenshots illustrating the original workflow.
 
-- You should install this packages to connect to server if you are using termux or linux.
+The repository does **not** include a server image, credentials, private keys, or a method for bypassing provider limits.
 
-### Termux
+## Requirements
 
-```sh
-pkg update && pkg upgrade && pkg install openssh
+You need the following:
+
+| Client | Required software |
+| --- | --- |
+| Linux | OpenSSH client |
+| Termux | Termux and the OpenSSH package |
+| Windows | OpenSSH or [PuTTY][2] |
+| iOS | [iSH][3] or another SSH client |
+| VNC client | A compatible VNC viewer, only if you enable VNC access |
+
+### Install an SSH client
+
+#### Linux
+
+```bash
+sudo apt update
+sudo apt install openssh-client
 ```
-<small>Download Termux from <a href="https://github.com/termux/termux-app/releases">here</a></small>
-  
-### Linux
 
-```sh
-sudo apt update && sudo apt install openssh-client
+#### Termux
+
+```bash
+pkg update
+pkg upgrade
+pkg install openssh
 ```
-____
 
-### Windows
+Install Termux from the [official Termux releases page][4].
 
-- You can connect to the server from CMD,if it not working use this guide here.
+#### Windows
 
-1: Download <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">Putty</a> and choose pkg `32-bit x86`.
+Windows includes OpenSSH on current versions. You can also use [PuTTY][2] and follow the provider's [PuTTY guide][5].
 
-2: Open it and type `ssh root@segfault.net` in Hostname Or Ip address bar.
+## Connect from a client
 
-3: The server will ask you password to connect. Type `segfault` and press enter.
+Start with the connection details supplied by the provider. Do not copy credentials from old screenshots or from third-party posts.
 
-4: Now server connected successfully. 
-
-5: Read the <a href="https://www.thc.org/segfault/faq/putty/">Segfault PuTTY Guide.</a>
-
-- You can use https://shell.segfault.net to connect to the server from browser too if you have any errors with this guides.
-_______
-
-### ios
-
-- You can use **ISH** 'it's like termux' to connect to server and RVNC Viewer to use GUI.
-
-<b>Both of them are available on the App store</b>
-
-- Download ISH From <a href="https://apps.apple.com/us/app/ish-shell/id1436902243">Here</a>
-
-- Download RVNC from <a href="https://apps.apple.com/us/app/vnc-viewer-remote-desktop/id352019548">Here</a>
-
-**You don't need to install any packages on ISH,just connect to the server with this command:**
-```sh
+```bash
 ssh root@segfault.net
 ```
-____
 
-- Password for connect
-```sh
-segfault
+The service may display a **secret** and a server-specific SSH command after the initial connection. Treat that command as a credential:
+
+1. Copy the complete command to a secure location.
+2. Do not publish the secret in an issue, screenshot, commit, or chat.
+3. Use the server-specific command for future connections.
+4. Do not assume that the example hostname, username, password, or secret in an old guide is still valid.
+
+A server-specific command generally has this structure:
+
+```bash
+ssh -o 'SetEnv SECRET=YOUR_SECRET' root@YOUR_ASSIGNED_HOST
 ```
-<img src="img/server.png"></a>
-____________
 
-### Now you successfully connected to your server. Write down the SECRET shown on the screen. You need this SECRET to connect back to YOUR server.
+Replace the placeholders with the values shown by the service. The placeholder values above are intentionally not real credentials.
 
-### If you get error (No Public Key) when update run this command:
-```sh
-gpg --keyserver keyserver.ubuntu.com --recv-keys 827C8569F2518CC677FECA1AED65462EC8D5E4C5
-gpg --export 827C8569F2518CC677FECA1AED65462EC8D5E4C5 | sudo tee /etc/apt/trusted.gpg.d/kali.gpg > /dev/null
+For browser-based access, use the provider's current web shell if it is available. See the [official Segfault documentation][1] for the current endpoint and access requirements.
+
+## Reconnect to your assigned server
+
+Your work may be associated with the secret and hostname issued during the initial session. Save the complete SSH command locally, for example in `~/.ssh/config`, rather than placing secrets in a public script:
+
+```sshconfig
+Host my-segfault-server
+    HostName YOUR_ASSIGNED_HOST
+    User root
+    SetEnv SECRET=YOUR_SECRET
 ```
-____________
 
-### You should copy this ssh line from ssh -o to segfault.net
-- Like This `ssh -o "SetEnv SECRET=PlPtAROaKlMNmnlsMwSbyb" root@8lgm.segfault.net`
+Then connect with:
 
-<img src="img/ssh.jpg"></a>
+```bash
+ssh my-segfault-server
+```
 
-- You must use this string `ssh -o SetEnv SECRET=...` to connect back to _your_ server. Your data/work is associated with this `SECRET`. You can only access your data if you use the SECRET from the `ssh -o` line. Do not use `ssh root@segfault.net` again.
+Protect the configuration file:
 
-### Now if you want to connect to server with vnc server follow steps:
+```bash
+chmod 600 ~/.ssh/config
+```
 
-> [!IMPORTANT]
-> You must use tmate and 247.py script if you will use this server for 24/7, Check the end of the repo to know how to use it
-> 
+> Never commit a real secret, private key, access token, or provider password to this repository.
 
-- Add `-L5900:0:5900` to your ssh line and connect to your server like this: `ssh -L5900:0:5900 -o 'SetEnv SECRET=...' root@...`.
+## Optional VNC access
 
-- Type this command in terminal
+VNC is optional. SSH port forwarding keeps the VNC port bound to your local machine instead of exposing it publicly.
 
-```sh 
+### 1. Create the SSH tunnel
+
+Append the local port-forwarding option to your server-specific SSH command:
+
+```bash
+ssh -L 5900:127.0.0.1:5900 \
+    -o 'SetEnv SECRET=YOUR_SECRET' \
+    root@YOUR_ASSIGNED_HOST
+```
+
+Keep this SSH session open.
+
+### 2. Start the desktop/VNC service
+
+In the SSH session, run the command supported by the server image:
+
+```bash
 startxvnc
 ```
-- Then it will look like this:  
-<img src="img/sshvnc.jpg"></a>
 
-- Now open another terminal and enter the ssh that gives to you after enter `startxvnc`, enter password `segfault`.
+Use the display and password shown by the server. Do not reuse a password from an old screenshot or publish it.
 
-<small>ssh should be like this `ssh -L5900:0:5900 -o 'SetEnv SECRET=...' root@...`</small>
+### 3. Connect with a VNC viewer
 
-- Then open any vnc viewer.
+Open a VNC client and connect to:
 
-- You can download VNC Viewer for
-Android from <a href="https://play.google.com/store/apps/details?id=com.realvnc.viewer.android&hl=en_US&pli=1">Here</a>
-
-- For Windows From <a href="https://www.realvnc.com/en/connect/download/viewer/windows/">Here</a>
-
-- For Linux **Remmina** is installed already on ubuntu, if it not installed check this website <a href="https://remmina.org/how-to-install-remmina/">Here</a>
-
-- You can use RVNC Viewer on Linux too, See <a href="https://www.realvnc.com/en/connect/download/viewer/linux/">This</a>
-____________
-
-- Enter this ip in your VNC Viewer
-
-```sh
+```text
 127.0.0.1:5900
 ```
-<img src="img/sshdisplay.png"></a>
-- Now you are successfully connected to the server with VNC server,Enjoy it.
-____________
 
-### To make server run 24/7 use this python script
-```sh
-git clone https://github.com/mrx7014/SSH-KaliLinux;cd SSH-KaliLinux;python3 247.py
+Possible clients include [RealVNC Viewer][6] and [Remmina][7]. Use the port and display number reported by the server if they differ from the example above.
+
+## The `247.py` helper
+
+`247.py` prints an elapsed-time counter in the terminal:
+
+```bash
+python3 247.py
 ```
 
-> [!IMPORTANT] 
-> If you will use this server for a long time you should make an tmate ssh and login to the server by tmate ssh daily to avoid server shutdown
-> 
+It is a lightweight session indicator. **It does not prevent shutdown, renew a lease, reconnect SSH, or guarantee 24/7 availability.** Do not use it to evade service limits or provider policies.
 
-<hr />
+To run it from a fresh checkout:
 
+```bash
+git clone https://github.com/mrx7014/SSH-KaliLinux.git
+cd SSH-KaliLinux
+python3 247.py
+```
 
-### Contact US
-- Linktree: https://linktr.ee/armond0x
-- Donate: https://bmc.link/armond0x
+For long-running sessions, use only provider-approved mechanisms and read the current [Segfault documentation][1].
 
-____________
+## Security and acceptable use
 
-### Thanks To:
-- <a href="https://www.thc.org/">THC</a> for this free server
-- join telegram group: https://t.me/thcorg
-- Website: https://www.thc.org
+Use the environment only on systems and networks for which you have explicit permission. In particular:
+
+- Do not scan, exploit, brute-force, or access third-party systems without authorization.
+- Do not expose VNC or SSH ports directly to the public internet when an SSH tunnel is sufficient.
+- Do not store secrets in shell history, public logs, screenshots, or source control.
+- Verify commands before running them, especially commands involving `sudo`, package signing keys, or remote scripts.
+- Follow the provider's acceptable-use policy, resource limits, and abuse-reporting process.
+
+Network anonymity is not guaranteed. A VPN or provider-controlled network path does not make unauthorized activity legal or untraceable.
+
+## Troubleshooting
+
+### `Permission denied` or authentication failure
+
+Confirm that you are using the current server-specific SSH command and secret. Do not keep retrying an expired or copied command.
+
+### `No public key` or package-signature errors
+
+Do not blindly import a key from an old blog post or screenshot. Check the current Kali documentation and verify the key fingerprint through a trusted official source before changing APT trust configuration.
+
+### VNC cannot connect
+
+Check that the SSH tunnel is still open, that the VNC service is running on the remote host, and that the VNC client is using the forwarded local address and port. Do not expose port `5900` publicly as a workaround.
+
+### The server is unavailable
+
+The service is temporary and may be at capacity, rate-limited, or changed by the provider. Check the [official Segfault channels and documentation][1] before opening an issue here.
+
+## Project files
+
+| File | Purpose |
+| --- | --- |
+| `247.py` | Displays elapsed time in the terminal; it does not provide persistence. |
+| `img/` | Screenshots from the documented workflow. |
+| `README.md` | Usage, security, and troubleshooting guide. |
+
+## Contributing
+
+Issues and pull requests are welcome. When proposing an update:
+
+1. Verify the behavior against current provider documentation.
+2. Remove secrets, personal data, and credentials from examples and screenshots.
+3. Explain changes to commands or security guidance.
+4. Test shell commands on a clean client where practical.
+
+## Credits
+
+- [THC Segfault][1] for the referenced service and documentation.
+- [mrx7014/SSH-KaliLinux][8] contributors for maintaining this guide.
+
+[1]: https://www.thc.org/segfault/ "THC Segfault official website"
+[2]: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html "PuTTY official download page"
+[3]: https://apps.apple.com/us/app/ish-shell/id1436902243 "iSH Shell on the App Store"
+[4]: https://github.com/termux/termux-app/releases "Termux official releases"
+[5]: https://www.thc.org/segfault/faq/putty/ "THC Segfault PuTTY guide"
+[6]: https://www.realvnc.com/en/connect/download/viewer/ "RealVNC Viewer downloads"
+[7]: https://remmina.org/how-to-install-remmina/ "Remmina installation guide"
+[8]: https://github.com/mrx7014/SSH-KaliLinux "SSH Kali Linux repository"
