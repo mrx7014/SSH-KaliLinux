@@ -220,7 +220,6 @@ Issues and pull requests are welcome. When proposing an update:
 ## Credits
 
 - [THC Segfault][1] for the referenced service and documentation.
-- [mrx7014/SSH-KaliLinux][8] contributors for maintaining this guide.
 
 [1]: https://www.thc.org/segfault/ "THC Segfault official website"
 [2]: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html "PuTTY official download page"
