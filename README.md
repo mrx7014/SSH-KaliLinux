@@ -24,7 +24,7 @@ This repository contains:
 
 - Platform-neutral SSH connection instructions.
 - Optional instructions for forwarding a VNC display over SSH.
-- `247.py`, a small terminal timer that can be used as a visible session indicator.
+- `session_timer.py`, a dependency-free session timer with logging and an optional time limit.
 - Screenshots illustrating the original workflow.
 
 The repository does **not** include a server image, credentials, private keys, or a method for bypassing provider limits.
@@ -150,22 +150,39 @@ Open a VNC client and connect to:
 
 Possible clients include [RealVNC Viewer][6] and [Remmina][7]. Use the port and display number reported by the server if they differ from the example above.
 
-## The `247.py` helper
+## The `session_timer.py` helper
 
-`247.py` prints an elapsed-time counter in the terminal:
+`session_timer.py` displays the elapsed time of the local process:
 
 ```bash
-python3 247.py
+python3 session_timer.py
 ```
 
-It is a lightweight session indicator. **It does not prevent shutdown, renew a lease, reconnect SSH, or guarantee 24/7 availability.** Do not use it to evade service limits or provider policies.
+It is a local session indicator. **It does not prevent shutdown, renew a lease, reconnect SSH, or guarantee 24/7 availability.** Do not use it to evade service limits or provider policies.
+
+Available options include:
+
+```bash
+python3 session_timer.py --interval 5
+python3 session_timer.py --log session.log
+python3 session_timer.py --hours 2
+python3 session_timer.py --quiet
+```
+
+| Option | Purpose |
+| --- | --- |
+| `--interval SECONDS` | Set the refresh interval. |
+| `--log FILE` | Append start and stop events to a log file. |
+| `--hours HOURS` | Stop automatically after the selected duration. |
+| `--quiet` | Suppress live refresh and print only the final summary. |
+| `--version` | Show the script version. |
 
 To run it from a fresh checkout:
 
 ```bash
 git clone https://github.com/mrx7014/SSH-KaliLinux.git
 cd SSH-KaliLinux
-python3 247.py
+python3 session_timer.py --log session.log
 ```
 
 For long-running sessions, use only provider-approved mechanisms and read the current [Segfault documentation][1].
@@ -204,7 +221,8 @@ The service is temporary and may be at capacity, rate-limited, or changed by the
 
 | File | Purpose |
 | --- | --- |
-| `247.py` | Displays elapsed time in the terminal; it does not provide persistence. |
+| `session_timer.py` | Displays and optionally logs elapsed time; it does not provide persistence. |
+| `247.py` | Legacy timer kept for backwards compatibility. |
 | `img/` | Screenshots from the documented workflow. |
 | `README.md` | Usage, security, and troubleshooting guide. |
 
